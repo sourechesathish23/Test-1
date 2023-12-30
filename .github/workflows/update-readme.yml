@@ -27,6 +27,6 @@ jobs:
       - name: Push changes to the target repository
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN }}
           repository: ${{ env.REPO }}  # Access the repository from the REPO environment variable
           branch: main
