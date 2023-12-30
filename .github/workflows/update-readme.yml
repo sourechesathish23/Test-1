@@ -3,7 +3,10 @@ name: Update README with Date and Time
 on:
   schedule:
     - cron: '*/5 * * * *'  # Run every 5 minutes
-
+  repository_dispatch:
+    types: [uptime]
+  workflow_dispatch:
+  
 jobs:
   update-readme:
     runs-on: ubuntu-latest
